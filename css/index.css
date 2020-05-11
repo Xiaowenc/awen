@@ -1,0 +1,449 @@
+.headerBox{
+    width:100%;
+    height:90px;
+    
+}
+.headerBox .header{
+   height:100%;
+    
+}
+.headerBox .logo{
+    width:180px;
+    height:100%;
+    text-indent:-99999em;
+    overflow: hidden;
+    margin-right:65px;
+}
+.headerBox .logo-bg{
+    display: block;
+    background:url(../images/logo.png) no-repeat center center;
+    width:100%;
+    height:100%;
+}
+.headerBox .navBox{
+    height:100%;
+}
+.headerBox .navBox ul::after{
+    content: "";
+    display: block;
+    height:0;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
+}
+.headerBox .navBox ul li{
+    line-height:90px;
+    height:90px;
+    width:100px;
+    float:left;
+    margin:0px 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: center;
+}
+.headerBox .navBox ul li.active{
+    border-bottom:3px solid #f00;
+    
+}
+.headerBox .navBox ul li:hover{
+    border-bottom:3px solid #f00;
+}
+.headerBox .right-tel{
+    float:right;
+    height:100%;
+    line-height:90px;
+    
+}
+.headerBox .right-tel::after{
+    content: "";
+    display: block;
+    height:0;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
+}
+.headerBox .right-tel i.tel-icon{
+    display:inline-block;
+    width:25px;
+    height:25px;
+    background: url(../images/tle.png) no-repeat center center;
+    vertical-align:middle;
+}
+.headerBox .right-tel span.txt-tel{
+    color:#e4392a;
+    font-size:18px;
+    vertical-align:middle;
+}
+
+.banner{
+    width:100%;
+    height:auto;
+}
+.banner img{
+    width:100%;
+}
+
+.service{
+    padding-bottom:75px;
+}
+
+.service ul li {
+    width:calc(25% - 40px);
+    float:left;
+    margin-left:53px;
+}
+.service ul li:first-child{
+    margin-left:0px;
+}
+.service ul li .radius-box{
+    width:135px;
+    height:135px;
+    border:3px #dedede solid;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    position: relative;
+    overflow: hidden;
+    margin:0 auto;
+}
+.service ul li .radius-box .icon-box{
+    width:calc(100% - 10px);
+    height:calc(100% - 10px);
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    background:#ebecf0;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    position: relative;
+}
+.service ul li .radius-box .icon-box .img-top{
+    position: absolute;
+    top:-50%;
+    left:50%;
+    margin-left:-27px;
+    transition:all 0.3s ease-in-out ;
+    -webkit-transition:all 0.3s ease-in-out ;
+    -moz-transition:all 0.3s ease-in-out ;
+}
+.service ul li .radius-box .icon-box .box-bg{
+    width:100%;
+    height:100%;
+    background: url(../images/service_icon1.png) no-repeat center center;
+}
+.service ul li .center-txt{
+    width:100%;
+    text-align:center;
+    margin-top:65px;
+    color:#707070;
+}
+.service ul li .center-txt p{
+    font-size:18px;
+   
+}
+.service ul li .center-txt i.line-btm{
+    display: block;
+    width:25px;
+    height:2px;
+    background: #707070;
+    margin:0 auto;
+    margin-top:24px;
+}
+.service ul li .text-span{
+    width:100%;
+    line-height:25px;
+    margin-top:42px;
+    font-size: 14px;
+    color: #707070;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.service ul li:hover .radius-box .icon-box .box-bg{
+    opacity:0;
+}
+.service ul li:hover .radius-box .icon-box{
+    background:#e4392a;
+}
+.service ul li:hover .radius-box {
+    border-color:#e4392a;
+}
+.service ul li:hover .radius-box .icon-box .img-top{
+    top:50%;
+    margin-top:-22px;
+}
+.service ul li:hover .center-txt p {
+    color:#e4392a;
+
+}
+.service ul li:hover .text-span{
+    text-decoration:underline;
+}
+
+
+.caseBox{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    background: #f2f6fa;
+    
+}
+.caseBox .case{
+    padding-bottom:50px;
+}
+
+.caseBox ul::after{
+    content: "";
+    display: block;
+    height:0;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
+}
+.caseBox ul li{
+    width:calc(25% - 30px);
+    float:left;
+    margin-left:40px;
+    margin-bottom:40px;
+    position: relative;
+    overflow: hidden;
+}
+.caseBox ul li:nth-child(4n+1){
+    margin-left:0px;
+}
+.caseBox ul li .topBox{
+    width:100%;
+    height:100%;
+    background:rgba(255,0,0,0.5);
+    position: absolute;
+    top:-100%;
+    z-index: 9;
+    transition:top 0.3s linear;
+    -webkit-transition:top 0.3s linear;
+    -moz-transition:top 0.3s linear;
+    line-height:199px;
+    color:#fff;
+    
+}
+.caseBox ul li img{
+    width:100%;
+}
+.caseBox ul li:hover .topBox{
+    top:0;
+}
+.caseBox .Down{
+    width:65px;
+    height:65px;
+    background: #000014;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    text-align: center;
+    margin:0 auto;
+}
+
+.DontaiBox{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    background:#1d1e33;
+}
+.DontaiBox .BlockTitle h4{
+    color:#fff;
+}
+.DontaiBox .date-box{
+    width:75px;
+    height:85px;
+    border:1px solid #fff;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    font-size:20px;
+    color:#fff;
+    text-align:left;
+    padding:15px 8px;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+.DontaiBox .date-box .date-txt{
+    font-size:14px;
+}
+
+.DontaiBox ul li{
+    width:calc(25% - 20px);
+    float:left;
+    text-align:left;
+    margin-left:26px;
+    position: relative;
+    overflow:hidden;
+}
+.DontaiBox ul li .boxLeft{
+    width:250px;
+}
+.DontaiBox ul li p{
+    font-size:16px;
+    padding:24px 0; 
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.DontaiBox ul li .inform{
+    font-size:12px;
+    color:#bbbbbe;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    line-height:25px;
+}
+.DontaiBox ul li .img-icon{
+    margin-top:55px;
+}
+.DontaiBox ul li .top-img-box,.DontaiBox ul li .btm-txt-box{
+    position: absolute;
+    width:100%;
+    height:50%;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    
+}
+.DontaiBox ul li .btm-txt-box{
+    background:#000022;
+    box-sizing:border-box;
+    padding: 0 27px 20px 27px;
+    bottom:-50%;
+}
+.DontaiBox ul li .top-img-box{
+    top:-50%;
+}
+.DontaiBox ul li .top-img-box img{
+    height:100%;
+    width:100%;
+}
+.DontaiBox ul li:hover .btm-txt-box{
+    bottom:0;
+
+}
+.DontaiBox ul li:hover .top-img-box{
+    top:0;
+}
+.more{
+    display: block;
+    width:195px;
+    height:50px;line-height:50px;
+    color:#fff;
+    margin:60px auto;
+    font-size:20px;
+    border:1px solid #fff;
+    text-align:center;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+}
+.more:hover{
+    background:#e4392a;
+}
+.contactUsBox{
+    padding-bottom:80px;
+}
+.contactUsBox .informBox::after{
+    content: "";
+    display: block;
+    height:0;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
+}
+.contactUsBox .left-box{
+    float:left;
+}
+
+.contactUsBox .left-box .dir{
+    height:40px;
+    line-height:40px;
+    margin-top:10px;
+    font-size:14px;
+}
+
+.contactUsBox .left-box .dir .lefticon{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    margin-right:20px;
+}
+.contactUsBox .right-box{
+    float:right;
+}
+.contactUsBox .right-box input{
+    width: 47%;
+    height:40px;
+    border:1px solid #63637f;
+    display:inline-block;
+    font-size:16px;
+    box-sizing:border-box;
+    -webkit-border-box:border-box;
+    padding-left:10px;
+}
+.contactUsBox input.cutaout{
+   float:right;
+}
+.contactUsBox .right-box textarea{
+    width:100%;
+    height:140px;
+    border:1px solid #63637f;
+    margin-top:10px;
+    box-sizing:border-box;
+    -webkit-border-box:border-box;
+
+}
+.contactUsBox .right-box .submit{
+    width:100%;
+    height:50px;
+    background: #63637f;
+    font-size:16px;
+    color:#fff;
+    margin-top:10px;
+}
+.footerNavBox{
+    width:100%;
+    height:auto;
+    background:#191938;
+    padding:70px 0px;
+}
+.footerNav::after{
+    content: "";
+    display: block;
+    height:0;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
+}
+.footerNavBox .footerNav dt{
+    font-size:22px;
+    color:#fff;
+    margin-bottom:20px;
+}
+.footerNavBox .footerNav dd{
+    line-height:30px;
+}
+.footerNavBox .footerNav a{
+    color:#a8a8af;
+    font-size:14px;
+}
+.footerNavBox .footerNav dl{
+    margin-right:150px;
+    float:left;
+}
+.footer{
+    width:100%;
+    height:40px;
+    background:#000022;
+    line-height:40px;
+    color:#a8a8af;
+    font-size:16px;
+}

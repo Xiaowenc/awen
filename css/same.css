@@ -1,0 +1,97 @@
+/*(1)���Ĭ����ʽ*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+fieldset, img,input,button { border:0 none; padding:0;margin:0;outline-style:none; }   /*ȥ��input�Ⱦ۽�ʱ����ɫ�߿�*/
+ul,li,ol{ list-style:none; }
+header,section,main,aside,footer,nav,article{display:block; box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;}
+select, input,button,textarea,{vertical-align:middle;outline: none;}
+textarea { resize:none; } /*��ֹ�϶�*/
+img {border:0; vertical-align:middle; }  
+html,body{font-family:"΢���ź�";width:100%;height:100%;font-size:16px;background:#fff;}
+a { 
+    color:#000;
+    text-decoration:none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+}
+.imgmid{display:inline-block;width:0px;height:100%;vertical-align:middle;font-size:0px;}
+.clearfix:before,.clearfix:after {  /*�������*/
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:1em;} 
+s,i,em{font-style:normal;text-decoration:none;}
+
+
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.ac {
+    text-align:center;
+}
+.f12{ font-size: 12px;}
+.f14{ font-size: 14px;}
+.f16{ font-size: 16px;}
+.color66{
+    color:#666;
+}
+.colore3{
+    color:#e3e3e3;
+}
+.colorff{
+    color:#fff;
+}
+.huititle{
+    color:#cacbd1;
+}
+.redtitle{
+    color:#e4392a;
+}
+.aBlock {
+    display:block;
+    width:100%;
+    height:100%;
+    /* text-align:center; */
+}
+.BlockAuto{
+    width:1170px;
+    margin:0 auto;
+}
+
+.BlockTitle{
+    width:100%;
+    height:100%;
+    text-align:center;
+    margin:60px 0;
+}
+.BlockTitle h4{
+    text-align:center;
+    font-size:26px;
+    font-weight:normal;
+    color:#000022;
+    line-height:60px;
+}
+.BlockTitle span{
+    font-size:18px;
+    margin:0px 5px;
+}
+ul::after{
+    content: "";
+    display: block;
+    height:0;
+    overflow: hidden;
+    clear: both;
+    visibility: hidden;
+}
+
+ul li:first-child{
+    margin-left:0px !important;
+}
